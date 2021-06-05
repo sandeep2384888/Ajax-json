@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+<note>
+  <to>Jhon</to>
+  <from>Ruby</from>
+  <heading>Meeting</heading>
+  <body>Meeting Scheduled this weekend!</body>
+</note>
+<note>
+  <to>Stones</to>
+  <from>Rock</from>
+  <heading>Invite</heading>
+  <body>Send you invite this weekend!</body>
+</note>
+</message>

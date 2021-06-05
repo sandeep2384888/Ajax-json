@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xml Demo</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var xhttp= new XMLHttpRequest();
+        xhttp.open("GET","xml-demo.xml",true);
+        xhttp.onreadystatechange = function(){
+            if(this.readyState==4 && this.status==200){
+                renderData(xhttp);
+            }
+        };
+
+        xhttp.send();
+
+        function renderData(xml){
+            var xmlDoc = xml.responseXML;
+            var data = xmlDoc.getElementsByTagName("to")[1].childNodes[0];
+            
+            var data2= xmlDoc.getElementsByTagName("note")[0];
+            document.getElementById("demo").innerHTML=data2.textContent;
+
+        }
+    </script>
+</body>
+</html>
